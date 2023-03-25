@@ -2591,3 +2591,126 @@ AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
 2023-03-25 04:18:44,631:INFO:Preloading libraries
 2023-03-25 04:18:44,632:INFO:Set up data.
 2023-03-25 04:18:44,670:INFO:Set up index.
+2023-03-25 10:33:49,712:INFO:Initializing create_model()
+2023-03-25 10:33:49,712:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001F76D2DA740>, estimator=gbc, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-03-25 10:33:49,712:INFO:Checking exceptions
+2023-03-25 10:33:49,722:INFO:Importing libraries
+2023-03-25 10:33:49,723:INFO:Copying training dataset
+2023-03-25 10:33:49,726:INFO:Defining folds
+2023-03-25 10:33:49,726:INFO:Declaring metric variables
+2023-03-25 10:33:49,728:INFO:Importing untrained model
+2023-03-25 10:33:49,729:INFO:Gradient Boosting Classifier Imported successfully
+2023-03-25 10:33:49,732:INFO:Starting cross validation
+2023-03-25 10:33:49,733:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-03-25 10:34:16,096:INFO:Calculating mean and std
+2023-03-25 10:34:16,097:INFO:Creating metrics dataframe
+2023-03-25 10:34:16,102:INFO:Finalizing model
+2023-03-25 10:34:18,594:INFO:Uploading results into container
+2023-03-25 10:34:18,594:INFO:Uploading model into container now
+2023-03-25 10:34:18,600:INFO:_master_model_container: 19
+2023-03-25 10:34:18,600:INFO:_display_container: 5
+2023-03-25 10:34:18,600:INFO:GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='log_loss', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_samples_leaf=1,
+                           min_samples_split=2, min_weight_fraction_leaf=0.0,
+                           n_estimators=100, n_iter_no_change=None,
+                           random_state=777, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False)
+2023-03-25 10:34:18,600:INFO:create_model() successfully completed......................................
+2023-03-25 10:34:18,706:INFO:Initializing interpret_model()
+2023-03-25 10:34:18,706:INFO:interpret_model(estimator=GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='log_loss', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_samples_leaf=1,
+                           min_samples_split=2, min_weight_fraction_leaf=0.0,
+                           n_estimators=100, n_iter_no_change=None,
+                           random_state=777, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False), use_train_data=False, X_new_sample=None, y_new_sample=None, feature=None, kwargs={}, observation=None, plot=summary, save=False, self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001F76D2DA740>)
+2023-03-25 10:34:18,706:INFO:Checking exceptions
+2023-03-25 10:34:18,706:INFO:Soft dependency imported: shap: 0.41.0
+2023-03-25 10:35:02,347:INFO:Initializing create_model()
+2023-03-25 10:35:02,347:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001F76D2DA740>, estimator=rf, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-03-25 10:35:02,347:INFO:Checking exceptions
+2023-03-25 10:35:02,354:INFO:Importing libraries
+2023-03-25 10:35:02,354:INFO:Copying training dataset
+2023-03-25 10:35:02,357:INFO:Defining folds
+2023-03-25 10:35:02,357:INFO:Declaring metric variables
+2023-03-25 10:35:02,359:INFO:Importing untrained model
+2023-03-25 10:35:02,360:INFO:Random Forest Classifier Imported successfully
+2023-03-25 10:35:02,364:INFO:Starting cross validation
+2023-03-25 10:35:02,365:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-03-25 10:35:19,991:INFO:Calculating mean and std
+2023-03-25 10:35:19,991:INFO:Creating metrics dataframe
+2023-03-25 10:35:19,994:INFO:Finalizing model
+2023-03-25 10:35:22,733:INFO:Uploading results into container
+2023-03-25 10:35:22,734:INFO:Uploading model into container now
+2023-03-25 10:35:22,739:INFO:_master_model_container: 20
+2023-03-25 10:35:22,739:INFO:_display_container: 6
+2023-03-25 10:35:22,740:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=777, verbose=0, warm_start=False)
+2023-03-25 10:35:22,740:INFO:create_model() successfully completed......................................
+2023-03-25 10:35:22,852:INFO:Initializing interpret_model()
+2023-03-25 10:35:22,852:INFO:interpret_model(estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=777, verbose=0, warm_start=False), use_train_data=False, X_new_sample=None, y_new_sample=None, feature=None, kwargs={}, observation=None, plot=summary, save=False, self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001F76D2DA740>)
+2023-03-25 10:35:22,852:INFO:Checking exceptions
+2023-03-25 10:35:22,852:INFO:Soft dependency imported: shap: 0.41.0
+2023-03-25 10:35:23,059:INFO:plot type: summary
+2023-03-25 10:35:23,059:INFO:Creating TreeExplainer
+2023-03-25 10:35:23,061:INFO:Compiling shap values
+2023-03-25 10:35:23,770:WARNING:No data for colormapping provided via 'c'. Parameters 'vmin', 'vmax' will be ignored
+
+2023-03-25 10:35:23,966:INFO:Visual Rendered Successfully
+2023-03-25 10:35:23,966:INFO:interpret_model() successfully completed......................................
+2023-03-25 10:36:30,564:INFO:Initializing create_model()
+2023-03-25 10:36:30,564:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001F76D2DA740>, estimator=gbc, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-03-25 10:36:30,565:INFO:Checking exceptions
+2023-03-25 10:36:30,574:INFO:Importing libraries
+2023-03-25 10:36:30,574:INFO:Copying training dataset
+2023-03-25 10:36:30,576:INFO:Defining folds
+2023-03-25 10:36:30,576:INFO:Declaring metric variables
+2023-03-25 10:36:30,578:INFO:Importing untrained model
+2023-03-25 10:36:30,579:INFO:Gradient Boosting Classifier Imported successfully
+2023-03-25 10:36:30,582:INFO:Starting cross validation
+2023-03-25 10:36:30,583:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-03-25 10:36:47,830:INFO:Calculating mean and std
+2023-03-25 10:36:47,831:INFO:Creating metrics dataframe
+2023-03-25 10:36:47,834:INFO:Finalizing model
+2023-03-25 10:36:50,344:INFO:Uploading results into container
+2023-03-25 10:36:50,344:INFO:Uploading model into container now
+2023-03-25 10:36:50,350:INFO:_master_model_container: 21
+2023-03-25 10:36:50,350:INFO:_display_container: 7
+2023-03-25 10:36:50,350:INFO:GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='log_loss', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_samples_leaf=1,
+                           min_samples_split=2, min_weight_fraction_leaf=0.0,
+                           n_estimators=100, n_iter_no_change=None,
+                           random_state=777, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False)
+2023-03-25 10:36:50,350:INFO:create_model() successfully completed......................................
+2023-03-25 10:36:50,462:INFO:Initializing interpret_model()
+2023-03-25 10:36:50,462:INFO:interpret_model(estimator=GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='log_loss', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_samples_leaf=1,
+                           min_samples_split=2, min_weight_fraction_leaf=0.0,
+                           n_estimators=100, n_iter_no_change=None,
+                           random_state=777, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False), use_train_data=False, X_new_sample=None, y_new_sample=None, feature=None, kwargs={}, observation=None, plot=summary, save=False, self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001F76D2DA740>)
+2023-03-25 10:36:50,462:INFO:Checking exceptions
+2023-03-25 10:36:50,462:INFO:Soft dependency imported: shap: 0.41.0
