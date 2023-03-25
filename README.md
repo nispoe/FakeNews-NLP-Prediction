@@ -1,4 +1,6 @@
 
+## Nispoe
+*** I forked this project and added a jupyter notebook as part of learning. ***
 
 ## FakeNewsNet
 
